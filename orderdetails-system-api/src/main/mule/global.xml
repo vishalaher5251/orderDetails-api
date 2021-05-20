@@ -15,7 +15,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <db:config name="Database_Config" doc:name="Database Config" doc:id="0ac648eb-31b5-42b2-a508-473babf4c55f" >
 		<db:my-sql-connection host="${db.host}" port="${db.port}" user="${db.user}" password="${db.password}" database="${db.database}" />
 	</db:config>
-	<configuration-properties doc:name="Configuration properties" doc:id="e3f46e9b-31f7-48d6-8525-9a49f088eaa2" file="orderdetails-${env}.yaml" />
+	<configuration-properties doc:name="Configuration properties" doc:id="e3f46e9b-31f7-48d6-8525-9a49f088eaa2" file="orderdetails-PROD.yaml" />
 	<configuration doc:name="Configuration" doc:id="a91595e1-628d-41ae-903b-5bbcda1e425d" defaultErrorHandler-ref="globalError_Handler" />
 	<error-handler name="globalError_Handler" doc:id="f6d313a9-066a-4773-a06c-74ca52591f74" >
 		<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="17e44734-e107-4e9b-a82b-683d50942cb0" type="DB:CONNECTIVITY">
